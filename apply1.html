@@ -1,0 +1,227 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(0, 0, 0, 0.955), rgba(63, 136, 130, 0.955));
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid silver;
+    font-size: 18px;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: transparent;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(242, 242, 243);
+}
+.container header::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: aqua;
+
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: transparent;
+}
+select{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    color: silver;
+    font-weight: 500;
+    border: none;
+    border-bottom: 3px solid silver;
+    padding: 4px;
+    font-size: 18px;
+}
+option{
+    color: black;
+    background: rgba(63, 136, 130, 0.955);
+}
+button{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+button:hover{
+    box-shadow: 0 0 5px cyan,0 0 50px cyan,0 0 100px cyan;
+}
+form .input-field.input-field{
+    display:block
+    
+}
+#ChooseFile{
+    color: black;
+    background: rgba(63, 136, 130, 0.955);
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: silver;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(74, 236, 201);
+}
+.input-field input{
+    height: 42px;
+    margin: 8px;
+    width: 100%;
+    color: silver;
+}
+.input-field ::placeholder{
+    font-size: 18px;
+    padding: 3px;
+    color: silver;
+}
+.input-field input:focus{
+    outline: 0;
+}
+.input-field.success input{
+    border-color: green;
+}
+.error input{
+    border-color: red;
+}
+.error{
+    color: red;
+}
+a{
+    color: silver;
+    font-size: 18px;
+}
+h1{
+    color: silver;
+    font-size: 28px;
+}
+.input-group input{
+    height: 42px;
+    margin: 8px;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: aliceblue;
+    border: 0,2px,0,0;
+    border: none;
+    border-bottom: 2px solid aqua;
+}
+.input-group ::placeholder{
+    font-size: 18px;
+    padding: 3px;
+    color: #f7f6f6;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group.success input{
+    border-color: green;
+}
+.error input{
+    border-color: red;
+}
+.error{
+    color: red;
+    font-size: 18px;
+}
+a{
+    color: #f7f6f6;
+    font-size: 18px;
+}
+        </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply</title>
+    <script src="ap.js" defer></script>
+</head>
+<body>
+<section>
+    <div class="container">
+    <form  action="upload.php" method="POST" enctype="multipart/form-data" id="form" onsubmit="return validation()">
+        <h1>Apply</h1><br><br>
+        <div class="form">
+            <label>Name</label>
+            <div class="input-field">
+            <input type="text" name="name" id="name" >
+            <div class="error"></div>
+            </div><br>
+            <label>Email</label>
+            <div class="input-field">
+            <input type="email" name="email" id="email">
+            <div class="error"></div>
+            </div><br>
+            <label>Phone Number</label>
+            <div class="input-field">
+            <input type="number" maxlength="10" pattern="[0-9]{10}"  name="phonenumber"  id="phonenumber">
+            <div class="error"></div>
+            </div><br>
+            <label>Resume</label>
+            <div class="input-field">
+            <input type="file" name="resume" id="resume" >
+            <div class="error"></div>
+            </div><br>
+            <a href="succ.html" ><button type="submit">submit</button></a>
+            </form><br>
+            
+        </section>
+</body>
+</html>
+
+
+
+

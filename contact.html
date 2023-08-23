@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+.contact-bg{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.8)),url(conta.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans',sans-serif;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 18px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    color: #fff;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    width: 50px;
+    height: 3px;
+    background: #f2327a;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #f2327a;
+    border-radius: 5px;
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg.text{
+    margin: 1.6rem 0;
+}
+.contact-box{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+
+    padding: 2rem 0;
+    
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #f2327a;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-contact{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+.contact-form:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+}
+.send-btn{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #f2327a;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-right: 990px;
+    outline: #c7c7c7;
+    border: #f2327a;
+
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color:#f2327a;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #c7c7c7;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: #f2327a;
+    border-color: #f2327a;
+}
+
+@media screen and (min-width: 768px){
+    .contact-bg.text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg.text{
+    width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 600px);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,600;1,800&family=Poppins:ital,wght@0,200;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+    <header>
+    <section class="contact-section">
+        <div class="contact-bg">
+            <div class="home">
+                <u1 class="nav-area">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="stlogin.html">Student Login</a></li>
+                    <li><a href="recomlogin.html">Company Login</a></li>
+            </u1>
+            </div><br>
+          <h3> Get touch with Us</h3>
+          <h2>Contact us</h2>
+          <div class="line">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ea temporibus nulla reiciendis sit maxime ratione dolor ipsam cumque, natus similique a possimus, omnis molestiae molestias exercitationem obcaecati. Dolor, dolore!</p>
+        </div>
+    
+    
+        <div class="contact-box">
+        <div class="contact-info">
+        <div>
+        <span><i class="fas fa-mobile-alt"></i></span>
+        <span>Phone No.</span>
+        <span class="text">1-2334-98789-2</span>
+        </div>
+        <div>
+          <span><i class="fas fa-envelope-open"></i></span>
+        <span>E-mail</span>
+        <span class="text">mail@Company.com</span>
+        </div>
+        <div>
+          <span><i class="fas fa-map-marker-alt"></i></span>
+        <span>Address</span>
+        <span class="text">23/2 SPB street , Pollachi</span>
+        </div>
+        <div>
+          <span><i class="fas fa-clock"></i></span>
+        <span>Opaning Hours</span>
+        <span class="text">Monday-Friday(9:00 AM to 5:00 PM)</span>
+        </div>
+    
+        <div class="contact-form">
+          <form>
+            <div>
+              <input type="text" class="form-contact" placeholder="First name">
+              <input type="text" class="form-contact" placeholder="Last name">
+            </div>
+            <div>
+              <input type="email" class="form-contact" placeholder="E-mail">
+              <input type="text" class="form-contact" placeholder="Phone">
+            </div>
+            <textarea rows="5" placeholder="message" class="form-contact"></textarea>
+            <input type="submit" class="send-btn" value="send message">
+          </form>
+    
+          <div>
+            <img src="contact.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.804996262399!2d76.99445924902042!3d10.660892131693375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba839d117dea505%3A0xb3fd96d9c8642659!2sPollachi%2C%20Tamil%20Nadu%20642001!5e0!3m2!1sen!2sin!4v1690868293776!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+      <div class="contact-footer">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div>
+      </div>
+      </section>
+      </header>
+</body>
+</html>

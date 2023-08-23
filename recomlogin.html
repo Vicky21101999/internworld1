@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(5, 38, 48), rgba(37, 109, 177, 0.955));
+}
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 40%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: transparent;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 300px;
+    background-color: transparent;
+}
+h1{
+    color: aliceblue;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: rgb(50, 230, 200);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+button:hover{
+    box-shadow: 0 0 5px rgb(0, 119, 255),0 0 50px rgb(41, 97, 250),0 0 100px cyan;
+}
+form .input-field.input-field{
+    display:block
+    
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+.input-field label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input{
+    height: 42px;
+    margin: 8px;
+    width: 100%;
+}
+a{
+    color: aliceblue;
+}
+label{
+    color: aliceblue;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class="container">
+    <form name="myform1" action="recomlogin.php" method="POST">
+        <div class="form">
+        <h1>Login</h1><br>
+            <label>Username</label>
+            <div class="input-field">
+            <input type="text" name="username" required="">
+            </div>
+            <br><br>
+            <label>password</label>
+            <div class="input-field">
+            <input type="password" name="password"  required="">
+            </div>
+            <br><br>
+            <button type="submit">Login</button>
+            <br><br>
+            <a href="recom.html">Register for new ac</a>
+            </div>
+            </div>
+        </form>
+</body>
+</html>

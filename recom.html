@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recom.css">
+        <title>Document</title>
+        <script src="recom.js" defer></script>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5YNZXH8CF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-L5YNZXH8CF');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>Company Registration</header>
+        <form action="recom.php" method="POST" name="myform" class="form" id="form" onsubmit="return validation()">
+            <div class="form">
+                    <span class="title">Company Details</span><br><br>
+                            <label>Company Name</label><br>
+                            <div class="input-field">
+                            <input type="text" placeholder="Enter your company name" name="cname" id="cname">
+                            <div class="error"></div>
+                        </div><br>
+                        
+                            <label>Company address</address></label><br>
+                            <div class="input-field">
+                            <input type="text" placeholder="Street Address" name="sname" id="sname">
+                            <input type="text" placeholder="City" name="City" id="City">
+                            <input type="text" placeholder="State" name="state" id="state">
+                            <input type="text" placeholder="Zip Code" name="Zip" id="Zip">
+                            <input type="text" placeholder="Country" name="Country" id="Country">
+                            <div class="error"></div>
+                        </div>
+                        
+                            <label>Email</label><br>
+                            <div class="input-field">
+                            <input type="text" placeholder="Enter your Email" name="Email" id="Email">
+                            <div class="error"></div>
+                        </div>
+                    
+                            <label>Registration Number</label><br>
+                            <div class="input-field">
+                            <input type="text" placeholder="Enter your Registration Number" name="Renumber" id="Renumber">
+                            <div class="error"></div>
+                        </div>
+                        
+                            <label>Phone Number</label><br>
+                            <div class="input-field">
+                            <input type="text" placeholder="Enter your User Number" name="Number" id="Number">
+                            <div class="error"></div>
+                        </div>
+                
+                        <label>Industry</label><br>
+                            <div class="input-field">
+                            <select name="Industry" id="Industry">
+                                <option value="">Industry</option>
+                                <option value="BE">BE</option>
+                                <option value="BCA">BCA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="ME">ME</option>
+                                <option value="MCA">MCA</option>
+                                <option value="MBA">MBA</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                                <label>User Name</label><br>
+                                <div class="input-field">
+                                <input type="text" placeholder="Enter your User Name" name="name" id="uname">
+                                <div class="error"></div>
+                            </div>
+                                <label>Password</label><br>
+                                <div class="input-field">
+                                <input type="password" placeholder="Enter your Password" name="password" id="password">
+                                <div class="error"></div>
+                            </div>
+                                <label>Conform Password</label><br>
+                                <div class="input-field">
+                                <input type="password" placeholder="Enter your Password" name="password1" id="password1">
+                                <div class="error"></div>
+                            </div><br><br>
+                            <button type="submit" id="registerbtn" class="registerbtn">Register</button><br><br><br>
+
+                            <a href="recomlogin.html">GO to Login</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

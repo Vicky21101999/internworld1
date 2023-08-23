@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f3f3;
+    font-family: 'Poppins', sans-serif;
+
+}
+.body{
+    position: relative;
+    max-width: 800px;
+    width: 900px;
+    border-radius: 6px;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.993);
+    margin: 0 15px;
+    background: rgb(70, 144, 150);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+h1{
+    color: rgb(230, 236, 236);
+}
+
+.body form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: transparent;
+}
+.date{
+    border: black;
+}
+select{
+    width: 101%;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 2px;
+    color: #fff9f9;
+    border: 2px solid rgb(240, 247, 247);
+    outline: none;
+}
+option{
+    color: rgb(179, 179, 179);
+    background: rgba(0, 0, 0, 0.955);
+    border:#f7f6f6;
+}
+button{
+
+    width: 100%;
+    background: transparent;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 50%;
+
+}
+form .input-group.input-group{
+    display:block
+    
+}
+.body form .details{
+    margin-top: 30px;
+}
+.body form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #f8f3f3;
+}
+.form label{
+    font-size: 22px;
+    font-weight: 500;
+    color: #f7f6f6;
+}
+.input-group input{
+    height: 42px;
+    margin: 8px;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid rgb(244, 250, 250);
+}
+.input-group ::placeholder{
+    font-size: 18px;
+    padding: 3px;
+    color: #f7f6f6;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group.success input{
+    border-color: green;
+}
+.error input{
+    border-color: red;
+}
+.error{
+    color: red;
+    font-size: 18px;
+
+}
+a{
+    color: #f7f6f6;
+    font-size: 18px;
+    text-decoration: dashed;
+}

@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Forgot Password</title>
+    <link rel="icon" href="welcome interns logo.png">
+    <style>
+body 
+    {
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(img.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+  
+
+.forget_container {
+  margin: auto;
+  margin-top: 100px;
+  width: 400px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: none;
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.input_group input{
+    height: 42px;
+    margin: 8px;
+    width: 100%;
+    background-color: #fff;
+    color: rgb(3, 8, 12);
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+button{
+  background-color: #f1b774;
+  color: #080000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #e7cfcf;
+} 
+
+</style>  
+</head>
+<body>
+          <div class="forget_container">
+    <form action="forget.php" method="POST" >
+    <h2>Forgot Password</h2>
+    <div class="input_group">
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your Email Id" id="email" name="email" required>
+</div> <br><br>
+<div class="input_group">
+        <label for="new_password">New Password:</label>
+        <input type="password" placeholder="Enter your new password" id="new_password" name="new_password" required>
+</div>     <br><br>
+        <button type="submit">Reset Password</button>
+    </form>
+</div>
+</body>
+</html>
